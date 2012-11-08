@@ -1,0 +1,64 @@
+\documentclass[a4paper]{book}
+\usepackage{makeidx}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{times}
+\ifx\pdfoutput\undefined
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue
+           ]{hyperref}
+\usepackage{pspicture}
+\else
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue
+           ]{hyperref}
+\fi
+\usepackage[italian]{babel}
+
+\usepackage{doxygen}
+\makeindex
+\setcounter{tocdepth}{1}
+\renewcommand{\footrulewidth}{0.4pt}
+\begin{document}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large Remote Brain Manuale di riferimento\\[1ex]\large 1.0 }\\
+\vspace*{1cm}
+{\large Generato da Doxygen 1.4.7}\\
+\vspace*{0.5cm}
+{\small Wed Sep 20 12:28:36 2006}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\chapter{Remote Brain Indice dei namespace}
+\input{namespaces}
+\chapter{Remote Brain Indice delle strutture dati}
+\input{annotated}
+\chapter{Remote Brain Indice dei file}
+\input{files}
+\chapter{Remote Brain Documentazione dei namespace}
+\input{namespacestd}
+\chapter{Remote Brain Documentazione delle classi}
+\input{classMainWindow}
+\include{classSerialPort}
+\chapter{Remote Brain Documentazione dei file}
+\input{main_8cpp}
+\include{mainwindow_8cpp}
+\include{mainwindow_8h}
+\include{SerialPort_8cpp}
+\include{SerialPort_8h}
+\printindex
+\end{document}

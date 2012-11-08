@@ -1,0 +1,135 @@
+\hypertarget{SerialPort_8cpp}{
+\section{Riferimenti per il file Serial\-Port.cpp}
+\label{SerialPort_8cpp}\index{SerialPort.cpp@{SerialPort.cpp}}
+}
+{\tt \#include \char`\"{}Serial\-Port.h\char`\"{}}\par
+{\tt \#include \char`\"{}mainwindow.h\char`\"{}}\par
+\subsection*{Definizioni}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{SerialPort_8cpp_515119526a2e89ab018116ac95b628c0}{RECVBUFFERSIZE}~512
+\end{CompactItemize}
+\subsection*{Funzioni}
+\begin{CompactItemize}
+\item 
+int \hyperlink{SerialPort_8cpp_18feec80309c589013c02a64d88c7c26}{close\-Port} (HANDLE $\ast$porth)
+\item 
+int \hyperlink{SerialPort_8cpp_ea3d3d746e0bfe0e0f61bcd991329be7}{open\-Port} (HANDLE $\ast$porth, char $\ast$\hyperlink{mainwindow_8cpp_00eeca5cdf915ad3d1fd8dbf28ab156d}{portacom})
+\item 
+void \hyperlink{SerialPort_8cpp_f13ac658417232fff936412dd02c7258}{receivedata} (HANDLE $\ast$porth, char $\ast$\hyperlink{mainwindow_8cpp_65bf9d32222c82b489f99fcb4f892edd}{recvbuffer})
+\item 
+bool \hyperlink{SerialPort_8cpp_8f9bf1e54fe3f7489aa15f282455f068}{senddata} (HANDLE $\ast$porth, const char $\ast$d, double size)
+\end{CompactItemize}
+\subsection*{Variabili}
+\begin{CompactItemize}
+\item 
+COMMTIMEOUTS \hyperlink{SerialPort_8cpp_c6a3a6a1b69f5ce0b07b1959743d00ed}{cmt}
+\item 
+DCB \hyperlink{SerialPort_8cpp_9954a8d34e6014302ae1d99cf5714cc9}{dcb}
+\item 
+\hyperlink{classMainWindow}{Main\-Window} $\ast$ \hyperlink{SerialPort_8cpp_b6705fab832298411ae13ace059dd583}{main\-Window}
+\item 
+DWORD \hyperlink{SerialPort_8cpp_8c7659aa4473fb28708802fb35b9eef7}{read}
+\item 
+DWORD \hyperlink{SerialPort_8cpp_499ee21e69b1456284a39e1fe7996d65}{write}
+\end{CompactItemize}
+
+
+\subsection{Documentazione delle definizioni}
+\hypertarget{SerialPort_8cpp_515119526a2e89ab018116ac95b628c0}{
+\index{SerialPort.cpp@{Serial\-Port.cpp}!RECVBUFFERSIZE@{RECVBUFFERSIZE}}
+\index{RECVBUFFERSIZE@{RECVBUFFERSIZE}!SerialPort.cpp@{Serial\-Port.cpp}}
+\subsubsection[RECVBUFFERSIZE]{\setlength{\rightskip}{0pt plus 5cm}\#define RECVBUFFERSIZE~512}}
+\label{SerialPort_8cpp_515119526a2e89ab018116ac95b628c0}
+
+
+
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{SerialPort_8cpp_18feec80309c589013c02a64d88c7c26}{
+\index{SerialPort.cpp@{Serial\-Port.cpp}!closePort@{closePort}}
+\index{closePort@{closePort}!SerialPort.cpp@{Serial\-Port.cpp}}
+\subsubsection[closePort]{\setlength{\rightskip}{0pt plus 5cm}int close\-Port (HANDLE $\ast$ {\em porth})}}
+\label{SerialPort_8cpp_18feec80309c589013c02a64d88c7c26}
+
+
+Close the COM port \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em porth}]The handle \end{description}
+\end{Desc}
+\hypertarget{SerialPort_8cpp_ea3d3d746e0bfe0e0f61bcd991329be7}{
+\index{SerialPort.cpp@{Serial\-Port.cpp}!openPort@{openPort}}
+\index{openPort@{openPort}!SerialPort.cpp@{Serial\-Port.cpp}}
+\subsubsection[openPort]{\setlength{\rightskip}{0pt plus 5cm}int open\-Port (HANDLE $\ast$ {\em porth}, char $\ast$ {\em portacom})}}
+\label{SerialPort_8cpp_ea3d3d746e0bfe0e0f61bcd991329be7}
+
+
+Create the handle and open the COM port \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em porth}]The handle \item[{\em portacom}]The COM port you have to open \end{description}
+\end{Desc}
+\hypertarget{SerialPort_8cpp_f13ac658417232fff936412dd02c7258}{
+\index{SerialPort.cpp@{Serial\-Port.cpp}!receivedata@{receivedata}}
+\index{receivedata@{receivedata}!SerialPort.cpp@{Serial\-Port.cpp}}
+\subsubsection[receivedata]{\setlength{\rightskip}{0pt plus 5cm}void receivedata (HANDLE $\ast$ {\em porth}, char $\ast$ {\em recvbuffer})}}
+\label{SerialPort_8cpp_f13ac658417232fff936412dd02c7258}
+
+
+Receive (reading the COM port) \hypertarget{SerialPort_8cpp_8f9bf1e54fe3f7489aa15f282455f068}{
+\index{SerialPort.cpp@{Serial\-Port.cpp}!senddata@{senddata}}
+\index{senddata@{senddata}!SerialPort.cpp@{Serial\-Port.cpp}}
+\subsubsection[senddata]{\setlength{\rightskip}{0pt plus 5cm}bool senddata (HANDLE $\ast$ {\em porth}, const char $\ast$ {\em d}, double {\em size})}}
+\label{SerialPort_8cpp_8f9bf1e54fe3f7489aa15f282455f068}
+
+
+Send (writing on COM port) \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em porth}]The handle \item[{\em d}]the string that you have to send \item[{\em size}]the size of the string \end{description}
+\end{Desc}
+
+
+\subsection{Documentazione delle variabili}
+\hypertarget{SerialPort_8cpp_c6a3a6a1b69f5ce0b07b1959743d00ed}{
+\index{SerialPort.cpp@{Serial\-Port.cpp}!cmt@{cmt}}
+\index{cmt@{cmt}!SerialPort.cpp@{Serial\-Port.cpp}}
+\subsubsection[cmt]{\setlength{\rightskip}{0pt plus 5cm}COMMTIMEOUTS \hyperlink{SerialPort_8cpp_c6a3a6a1b69f5ce0b07b1959743d00ed}{cmt}}}
+\label{SerialPort_8cpp_c6a3a6a1b69f5ce0b07b1959743d00ed}
+
+
+\hypertarget{SerialPort_8cpp_9954a8d34e6014302ae1d99cf5714cc9}{
+\index{SerialPort.cpp@{Serial\-Port.cpp}!dcb@{dcb}}
+\index{dcb@{dcb}!SerialPort.cpp@{Serial\-Port.cpp}}
+\subsubsection[dcb]{\setlength{\rightskip}{0pt plus 5cm}DCB \hyperlink{SerialPort_8cpp_9954a8d34e6014302ae1d99cf5714cc9}{dcb}}}
+\label{SerialPort_8cpp_9954a8d34e6014302ae1d99cf5714cc9}
+
+
+\hypertarget{SerialPort_8cpp_b6705fab832298411ae13ace059dd583}{
+\index{SerialPort.cpp@{Serial\-Port.cpp}!mainWindow@{mainWindow}}
+\index{mainWindow@{mainWindow}!SerialPort.cpp@{Serial\-Port.cpp}}
+\subsubsection[mainWindow]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classMainWindow}{Main\-Window}$\ast$ \hyperlink{SerialPort_8cpp_b6705fab832298411ae13ace059dd583}{main\-Window}}}
+\label{SerialPort_8cpp_b6705fab832298411ae13ace059dd583}
+
+
+Title: Seril\-Port.cpp 
+
+Description: Implementation of the \hyperlink{classSerialPort}{Serial\-Port} class. \begin{Desc}
+\item[Autore:]Andrea Maglie (Matr.456188) \end{Desc}
+\begin{Desc}
+\item[Versione:]1.0 \end{Desc}
+\hypertarget{SerialPort_8cpp_8c7659aa4473fb28708802fb35b9eef7}{
+\index{SerialPort.cpp@{Serial\-Port.cpp}!read@{read}}
+\index{read@{read}!SerialPort.cpp@{Serial\-Port.cpp}}
+\subsubsection[read]{\setlength{\rightskip}{0pt plus 5cm}DWORD \hyperlink{SerialPort_8cpp_8c7659aa4473fb28708802fb35b9eef7}{read}}}
+\label{SerialPort_8cpp_8c7659aa4473fb28708802fb35b9eef7}
+
+
+\hypertarget{SerialPort_8cpp_499ee21e69b1456284a39e1fe7996d65}{
+\index{SerialPort.cpp@{Serial\-Port.cpp}!write@{write}}
+\index{write@{write}!SerialPort.cpp@{Serial\-Port.cpp}}
+\subsubsection[write]{\setlength{\rightskip}{0pt plus 5cm}DWORD \hyperlink{SerialPort_8cpp_499ee21e69b1456284a39e1fe7996d65}{write}}}
+\label{SerialPort_8cpp_499ee21e69b1456284a39e1fe7996d65}
+
+

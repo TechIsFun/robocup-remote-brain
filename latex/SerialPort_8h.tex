@@ -1,0 +1,82 @@
+\hypertarget{SerialPort_8h}{
+\section{Riferimenti per il file Serial\-Port.h}
+\label{SerialPort_8h}\index{SerialPort.h@{SerialPort.h}}
+}
+{\tt \#include $<$iostream$>$}\par
+{\tt \#include $<$fstream$>$}\par
+{\tt \#include $<$windows.h$>$}\par
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$string.h$>$}\par
+{\tt \#include $<$QThread$>$}\par
+{\tt \#include \char`\"{}mainwindow.h\char`\"{}}\par
+\subsection*{Strutture dati}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classSerialPort}{Serial\-Port}
+\end{CompactItemize}
+\subsection*{Funzioni}
+\begin{CompactItemize}
+\item 
+int \hyperlink{SerialPort_8h_18feec80309c589013c02a64d88c7c26}{close\-Port} (HANDLE $\ast$porth)
+\item 
+DWORD WINAPI \hyperlink{SerialPort_8h_3ec429244ead8f4eb9f75e05fbfee35e}{funzione} (LPDWORD $\ast$lpdw\-Param)
+\item 
+int \hyperlink{SerialPort_8h_ea3d3d746e0bfe0e0f61bcd991329be7}{open\-Port} (HANDLE $\ast$porth, char $\ast$\hyperlink{mainwindow_8cpp_00eeca5cdf915ad3d1fd8dbf28ab156d}{portacom})
+\item 
+void \hyperlink{SerialPort_8h_f13ac658417232fff936412dd02c7258}{receivedata} (HANDLE $\ast$porth, char $\ast$\hyperlink{mainwindow_8cpp_65bf9d32222c82b489f99fcb4f892edd}{recvbuffer})
+\item 
+bool \hyperlink{SerialPort_8h_8f9bf1e54fe3f7489aa15f282455f068}{senddata} (HANDLE $\ast$porth, const char $\ast$d, double size)
+\end{CompactItemize}
+
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{SerialPort_8h_18feec80309c589013c02a64d88c7c26}{
+\index{SerialPort.h@{Serial\-Port.h}!closePort@{closePort}}
+\index{closePort@{closePort}!SerialPort.h@{Serial\-Port.h}}
+\subsubsection[closePort]{\setlength{\rightskip}{0pt plus 5cm}int close\-Port (HANDLE $\ast$ {\em porth})}}
+\label{SerialPort_8h_18feec80309c589013c02a64d88c7c26}
+
+
+Close the COM port \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em porth}]The handle \end{description}
+\end{Desc}
+\hypertarget{SerialPort_8h_3ec429244ead8f4eb9f75e05fbfee35e}{
+\index{SerialPort.h@{Serial\-Port.h}!funzione@{funzione}}
+\index{funzione@{funzione}!SerialPort.h@{Serial\-Port.h}}
+\subsubsection[funzione]{\setlength{\rightskip}{0pt plus 5cm}DWORD WINAPI funzione (LPDWORD $\ast$ {\em lpdw\-Param})}}
+\label{SerialPort_8h_3ec429244ead8f4eb9f75e05fbfee35e}
+
+
+\hypertarget{SerialPort_8h_ea3d3d746e0bfe0e0f61bcd991329be7}{
+\index{SerialPort.h@{Serial\-Port.h}!openPort@{openPort}}
+\index{openPort@{openPort}!SerialPort.h@{Serial\-Port.h}}
+\subsubsection[openPort]{\setlength{\rightskip}{0pt plus 5cm}int open\-Port (HANDLE $\ast$ {\em porth}, char $\ast$ {\em portacom})}}
+\label{SerialPort_8h_ea3d3d746e0bfe0e0f61bcd991329be7}
+
+
+Create the handle and open the COM port \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em porth}]The handle \item[{\em portacom}]The COM port you have to open \end{description}
+\end{Desc}
+\hypertarget{SerialPort_8h_f13ac658417232fff936412dd02c7258}{
+\index{SerialPort.h@{Serial\-Port.h}!receivedata@{receivedata}}
+\index{receivedata@{receivedata}!SerialPort.h@{Serial\-Port.h}}
+\subsubsection[receivedata]{\setlength{\rightskip}{0pt plus 5cm}void receivedata (HANDLE $\ast$ {\em porth}, char $\ast$ {\em recvbuffer})}}
+\label{SerialPort_8h_f13ac658417232fff936412dd02c7258}
+
+
+Receive (reading the COM port) \hypertarget{SerialPort_8h_8f9bf1e54fe3f7489aa15f282455f068}{
+\index{SerialPort.h@{Serial\-Port.h}!senddata@{senddata}}
+\index{senddata@{senddata}!SerialPort.h@{Serial\-Port.h}}
+\subsubsection[senddata]{\setlength{\rightskip}{0pt plus 5cm}bool senddata (HANDLE $\ast$ {\em porth}, const char $\ast$ {\em d}, double {\em size})}}
+\label{SerialPort_8h_8f9bf1e54fe3f7489aa15f282455f068}
+
+
+Send (writing on COM port) \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em porth}]The handle \item[{\em d}]the string that you have to send \item[{\em size}]the size of the string \end{description}
+\end{Desc}

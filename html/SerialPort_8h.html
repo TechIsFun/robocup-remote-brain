@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>Remote Brain: Riferimenti per il file SerialPort.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generato da Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="main.html"><span>Pagina&nbsp;Principale</span></a></li>
+    <li><a href="namespaces.html"><span>Namespace</span></a></li>
+    <li><a href="classes.html"><span>Strutture&nbsp;dati</span></a></li>
+    <li id="current"><a href="files.html"><span>File</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>Lista&nbsp;dei&nbsp;file</span></a></li>
+    <li><a href="globals.html"><span>Elementi&nbsp;globali</span></a></li>
+  </ul></div>
+<h1>Riferimenti per il file SerialPort.h</h1><code>#include &lt;iostream&gt;</code><br>
+<code>#include &lt;fstream&gt;</code><br>
+<code>#include &lt;windows.h&gt;</code><br>
+<code>#include &lt;stdio.h&gt;</code><br>
+<code>#include &lt;string.h&gt;</code><br>
+<code>#include &lt;QThread&gt;</code><br>
+<code>#include &quot;<a class="el" href="mainwindow_8h.html">mainwindow.h</a>&quot;</code><br>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Strutture dati</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPort.html">SerialPort</a></td></tr>
+
+<tr><td colspan="2"><br><h2>Funzioni</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="SerialPort_8h.html#18feec80309c589013c02a64d88c7c26">closePort</a> (HANDLE *porth)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DWORD WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="SerialPort_8h.html#3ec429244ead8f4eb9f75e05fbfee35e">funzione</a> (LPDWORD *lpdwParam)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="SerialPort_8h.html#ea3d3d746e0bfe0e0f61bcd991329be7">openPort</a> (HANDLE *porth, char *<a class="el" href="mainwindow_8cpp.html#00eeca5cdf915ad3d1fd8dbf28ab156d">portacom</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="SerialPort_8h.html#f13ac658417232fff936412dd02c7258">receivedata</a> (HANDLE *porth, char *<a class="el" href="mainwindow_8cpp.html#65bf9d32222c82b489f99fcb4f892edd">recvbuffer</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="SerialPort_8h.html#8f9bf1e54fe3f7489aa15f282455f068">senddata</a> (HANDLE *porth, const char *d, double size)</td></tr>
+
+</table>
+<hr><h2>Documentazione delle funzioni</h2>
+<a class="anchor" name="18feec80309c589013c02a64d88c7c26"></a><!-- doxytag: member="SerialPort.h::closePort" ref="18feec80309c589013c02a64d88c7c26" args="(HANDLE *porth)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int closePort           </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE *&nbsp;</td>
+          <td class="paramname"> <em>porth</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Close the COM port <dl compact><dt><b>Parametri:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>porth</em>&nbsp;</td><td>The handle </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3ec429244ead8f4eb9f75e05fbfee35e"></a><!-- doxytag: member="SerialPort.h::funzione" ref="3ec429244ead8f4eb9f75e05fbfee35e" args="(LPDWORD *lpdwParam)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD WINAPI funzione           </td>
+          <td>(</td>
+          <td class="paramtype">LPDWORD *&nbsp;</td>
+          <td class="paramname"> <em>lpdwParam</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="ea3d3d746e0bfe0e0f61bcd991329be7"></a><!-- doxytag: member="SerialPort.h::openPort" ref="ea3d3d746e0bfe0e0f61bcd991329be7" args="(HANDLE *porth, char *portacom)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int openPort           </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE *&nbsp;</td>
+          <td class="paramname"> <em>porth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>portacom</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Create the handle and open the COM port <dl compact><dt><b>Parametri:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>porth</em>&nbsp;</td><td>The handle </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>portacom</em>&nbsp;</td><td>The COM port you have to open </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f13ac658417232fff936412dd02c7258"></a><!-- doxytag: member="SerialPort.h::receivedata" ref="f13ac658417232fff936412dd02c7258" args="(HANDLE *porth, char *recvbuffer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void receivedata           </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE *&nbsp;</td>
+          <td class="paramname"> <em>porth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>recvbuffer</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Receive (reading the COM port) 
+</div>
+</div><p>
+<a class="anchor" name="8f9bf1e54fe3f7489aa15f282455f068"></a><!-- doxytag: member="SerialPort.h::senddata" ref="8f9bf1e54fe3f7489aa15f282455f068" args="(HANDLE *porth, const char *d, double size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool senddata           </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE *&nbsp;</td>
+          <td class="paramname"> <em>porth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Send (writing on COM port) <dl compact><dt><b>Parametri:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>porth</em>&nbsp;</td><td>The handle </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>d</em>&nbsp;</td><td>the string that you have to send </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>size</em>&nbsp;</td><td>the size of the string </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<hr size="1"><address style="align: right;"><small>Generato il Wed Sep 20 12:28:36 2006 per Remote Brain da&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

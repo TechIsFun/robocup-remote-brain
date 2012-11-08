@@ -1,0 +1,334 @@
+\hypertarget{mainwindow_8cpp}{
+\section{Riferimenti per il file mainwindow.cpp}
+\label{mainwindow_8cpp}\index{mainwindow.cpp@{mainwindow.cpp}}
+}
+{\tt \#include $<$Qt\-Gui$>$}\par
+{\tt \#include $<$QPoint$>$}\par
+{\tt \#include $<$QPainter$>$}\par
+{\tt \#include \char`\"{}mainwindow.h\char`\"{}}\par
+\subsection*{Namespace}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespacestd}{std}
+\end{CompactItemize}
+\subsection*{Definizioni}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{mainwindow_8cpp_be0f0011267471da0f8ebcf226dd05f8}{FIELDH}~419
+\item 
+\#define \hyperlink{mainwindow_8cpp_2f469c925fcf21dd6d918a036bb3f4e3}{FIELDW}~570
+\item 
+\#define \hyperlink{mainwindow_8cpp_696ef618a97a7e6909fef5278343cf43}{NUMBEROFROBOTS}~2
+\item 
+\#define \hyperlink{mainwindow_8cpp_515119526a2e89ab018116ac95b628c0}{RECVBUFFERSIZE}~512
+\end{CompactItemize}
+\subsection*{Funzioni}
+\begin{CompactItemize}
+\item 
+void \hyperlink{mainwindow_8cpp_69a50a89c86348f01cc23a429685e9dd}{define\-Robot\-Colors} ()
+\item 
+DWORD WINAPI \hyperlink{mainwindow_8cpp_3ec429244ead8f4eb9f75e05fbfee35e}{funzione} (LPDWORD $\ast$lpdw\-Param)
+\item 
+void \hyperlink{mainwindow_8cpp_046465f393d0876a74f11c66c1c95fa4}{listeningthread} ()
+\end{CompactItemize}
+\subsection*{Variabili}
+\begin{CompactItemize}
+\item 
+int \hyperlink{mainwindow_8cpp_61ee361cdeed1340ff62da8e9f2d7b46}{b} \mbox{[}NUMBEROFROBOTS\mbox{]}
+\item 
+QPush\-Button $\ast$ \hyperlink{mainwindow_8cpp_614d16ffffa52eb68de5bd7ba55b4cff}{close\-Port\-Button}
+\item 
+QText\-Edit $\ast$ \hyperlink{mainwindow_8cpp_560cbdfe5d8d9cf91c8065f38d391ba4}{cmd\-Line}
+\item 
+QCombo\-Box $\ast$ \hyperlink{mainwindow_8cpp_bb2810052111e8cc62004fc5e3d2858f}{combo}
+\item 
+QCombo\-Box $\ast$ \hyperlink{mainwindow_8cpp_9c2b7044142a72d814ecff31f02fab48}{combo\-Field\-Size}
+\item 
+QCombo\-Box $\ast$ \hyperlink{mainwindow_8cpp_f3706bd1004df2f034b2d4248aa005c1}{combo\-Port}
+\item 
+char $\ast$ \hyperlink{mainwindow_8cpp_85b548c0a2f5b990fd45b1846f702bed}{fieldport} = \char`\"{}y\char`\"{}
+\item 
+int \hyperlink{mainwindow_8cpp_2e153d156330e018184991dd02e75009}{g} \mbox{[}NUMBEROFROBOTS\mbox{]}
+\item 
+QPush\-Button $\ast$ \hyperlink{mainwindow_8cpp_b6a9976891cb20971afedcb268e596a0}{go\-Button}
+\item 
+QLabel $\ast$ \hyperlink{mainwindow_8cpp_5b3043aacdbae62352f5993a33c4a4b7}{image\-Label}
+\item 
+QText\-Edit $\ast$ \hyperlink{mainwindow_8cpp_3fbb8173a9510be37c564f103a543aaa}{info1}
+\item 
+QText\-Edit $\ast$ \hyperlink{mainwindow_8cpp_850f93f80a2433d5fadf30d5e5e866f4}{info2}
+\item 
+char $\ast$ \hyperlink{mainwindow_8cpp_0b2e8c7f76df48129f994ecc46d5c66c}{message}
+\item 
+QPush\-Button $\ast$ \hyperlink{mainwindow_8cpp_84351fcfbbed5a81cce783cb68e2eaf6}{open\-Port\-Button}
+\item 
+char $\ast$ \hyperlink{mainwindow_8cpp_00eeca5cdf915ad3d1fd8dbf28ab156d}{portacom}
+\item 
+HANDLE \hyperlink{mainwindow_8cpp_6b10b2ae96c856016dc4e92021ea50af}{port\-Handle}
+\item 
+int \hyperlink{mainwindow_8cpp_348a8673070b1d1e2f91feb1149cb76b}{pos\_\-x} \mbox{[}NUMBEROFROBOTS\mbox{]}
+\item 
+int \hyperlink{mainwindow_8cpp_f803113f8db598bbb5cc7cb55c53fd72}{pos\_\-y} \mbox{[}NUMBEROFROBOTS\mbox{]}
+\item 
+int \hyperlink{mainwindow_8cpp_a194f1a2c336647d7165309ff921f576}{r} \mbox{[}NUMBEROFROBOTS\mbox{]}
+\item 
+char \hyperlink{mainwindow_8cpp_65bf9d32222c82b489f99fcb4f892edd}{recvbuffer} \mbox{[}RECVBUFFERSIZE\mbox{]}
+\item 
+int \hyperlink{mainwindow_8cpp_ebf8093f61c93230d92191726d5bc846}{robot}
+\item 
+bool \hyperlink{mainwindow_8cpp_e31aae5c36d2da2116798bb42bf14d73}{robotchanged}
+\item 
+QPush\-Button $\ast$ \hyperlink{mainwindow_8cpp_852e2307ac8c879169cd0f76ed135c1b}{set\-Pos\-Button}
+\item 
+QPush\-Button $\ast$ \hyperlink{mainwindow_8cpp_a68dc4dea54cd443bda2a53f9b0621cd}{start\-Button}
+\item 
+QPush\-Button $\ast$ \hyperlink{mainwindow_8cpp_12a122b59e7d02ed91703cb0568faa3c}{stop\-Button}
+\item 
+QString \hyperlink{mainwindow_8cpp_288b834f8b483958be715bc77558bf46}{str}
+\end{CompactItemize}
+
+
+\subsection{Documentazione delle definizioni}
+\hypertarget{mainwindow_8cpp_be0f0011267471da0f8ebcf226dd05f8}{
+\index{mainwindow.cpp@{mainwindow.cpp}!FIELDH@{FIELDH}}
+\index{FIELDH@{FIELDH}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[FIELDH]{\setlength{\rightskip}{0pt plus 5cm}\#define FIELDH~419}}
+\label{mainwindow_8cpp_be0f0011267471da0f8ebcf226dd05f8}
+
+
+\hypertarget{mainwindow_8cpp_2f469c925fcf21dd6d918a036bb3f4e3}{
+\index{mainwindow.cpp@{mainwindow.cpp}!FIELDW@{FIELDW}}
+\index{FIELDW@{FIELDW}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[FIELDW]{\setlength{\rightskip}{0pt plus 5cm}\#define FIELDW~570}}
+\label{mainwindow_8cpp_2f469c925fcf21dd6d918a036bb3f4e3}
+
+
+Title: Main\-Window.cpp 
+
+Description: Implementation of the graphical interface of the Remote Brain application. \begin{Desc}
+\item[Autore:]Andrea Maglie (Matr.456188) \end{Desc}
+\begin{Desc}
+\item[Versione:]1.0 \end{Desc}
+\hypertarget{mainwindow_8cpp_696ef618a97a7e6909fef5278343cf43}{
+\index{mainwindow.cpp@{mainwindow.cpp}!NUMBEROFROBOTS@{NUMBEROFROBOTS}}
+\index{NUMBEROFROBOTS@{NUMBEROFROBOTS}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[NUMBEROFROBOTS]{\setlength{\rightskip}{0pt plus 5cm}\#define NUMBEROFROBOTS~2}}
+\label{mainwindow_8cpp_696ef618a97a7e6909fef5278343cf43}
+
+
+\hypertarget{mainwindow_8cpp_515119526a2e89ab018116ac95b628c0}{
+\index{mainwindow.cpp@{mainwindow.cpp}!RECVBUFFERSIZE@{RECVBUFFERSIZE}}
+\index{RECVBUFFERSIZE@{RECVBUFFERSIZE}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[RECVBUFFERSIZE]{\setlength{\rightskip}{0pt plus 5cm}\#define RECVBUFFERSIZE~512}}
+\label{mainwindow_8cpp_515119526a2e89ab018116ac95b628c0}
+
+
+
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{mainwindow_8cpp_69a50a89c86348f01cc23a429685e9dd}{
+\index{mainwindow.cpp@{mainwindow.cpp}!defineRobotColors@{defineRobotColors}}
+\index{defineRobotColors@{defineRobotColors}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[defineRobotColors]{\setlength{\rightskip}{0pt plus 5cm}void define\-Robot\-Colors ()}}
+\label{mainwindow_8cpp_69a50a89c86348f01cc23a429685e9dd}
+
+
+Customize the robot indicator's color. \hypertarget{mainwindow_8cpp_3ec429244ead8f4eb9f75e05fbfee35e}{
+\index{mainwindow.cpp@{mainwindow.cpp}!funzione@{funzione}}
+\index{funzione@{funzione}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[funzione]{\setlength{\rightskip}{0pt plus 5cm}DWORD WINAPI funzione (LPDWORD $\ast$ {\em lpdw\-Param})}}
+\label{mainwindow_8cpp_3ec429244ead8f4eb9f75e05fbfee35e}
+
+
+\hypertarget{mainwindow_8cpp_046465f393d0876a74f11c66c1c95fa4}{
+\index{mainwindow.cpp@{mainwindow.cpp}!listeningthread@{listeningthread}}
+\index{listeningthread@{listeningthread}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[listeningthread]{\setlength{\rightskip}{0pt plus 5cm}void listeningthread ()}}
+\label{mainwindow_8cpp_046465f393d0876a74f11c66c1c95fa4}
+
+
+
+
+\subsection{Documentazione delle variabili}
+\hypertarget{mainwindow_8cpp_61ee361cdeed1340ff62da8e9f2d7b46}{
+\index{mainwindow.cpp@{mainwindow.cpp}!b@{b}}
+\index{b@{b}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[b]{\setlength{\rightskip}{0pt plus 5cm}int \hyperlink{mainwindow_8cpp_61ee361cdeed1340ff62da8e9f2d7b46}{b}\mbox{[}NUMBEROFROBOTS\mbox{]}}}
+\label{mainwindow_8cpp_61ee361cdeed1340ff62da8e9f2d7b46}
+
+
+\hypertarget{mainwindow_8cpp_614d16ffffa52eb68de5bd7ba55b4cff}{
+\index{mainwindow.cpp@{mainwindow.cpp}!closePortButton@{closePortButton}}
+\index{closePortButton@{closePortButton}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[closePortButton]{\setlength{\rightskip}{0pt plus 5cm}QPush\-Button$\ast$ \hyperlink{mainwindow_8cpp_614d16ffffa52eb68de5bd7ba55b4cff}{close\-Port\-Button}}}
+\label{mainwindow_8cpp_614d16ffffa52eb68de5bd7ba55b4cff}
+
+
+\hypertarget{mainwindow_8cpp_560cbdfe5d8d9cf91c8065f38d391ba4}{
+\index{mainwindow.cpp@{mainwindow.cpp}!cmdLine@{cmdLine}}
+\index{cmdLine@{cmdLine}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[cmdLine]{\setlength{\rightskip}{0pt plus 5cm}QText\-Edit$\ast$ \hyperlink{mainwindow_8cpp_560cbdfe5d8d9cf91c8065f38d391ba4}{cmd\-Line}}}
+\label{mainwindow_8cpp_560cbdfe5d8d9cf91c8065f38d391ba4}
+
+
+\hypertarget{mainwindow_8cpp_bb2810052111e8cc62004fc5e3d2858f}{
+\index{mainwindow.cpp@{mainwindow.cpp}!combo@{combo}}
+\index{combo@{combo}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[combo]{\setlength{\rightskip}{0pt plus 5cm}QCombo\-Box$\ast$ \hyperlink{mainwindow_8cpp_bb2810052111e8cc62004fc5e3d2858f}{combo}}}
+\label{mainwindow_8cpp_bb2810052111e8cc62004fc5e3d2858f}
+
+
+\hypertarget{mainwindow_8cpp_9c2b7044142a72d814ecff31f02fab48}{
+\index{mainwindow.cpp@{mainwindow.cpp}!comboFieldSize@{comboFieldSize}}
+\index{comboFieldSize@{comboFieldSize}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[comboFieldSize]{\setlength{\rightskip}{0pt plus 5cm}QCombo\-Box$\ast$ \hyperlink{mainwindow_8cpp_9c2b7044142a72d814ecff31f02fab48}{combo\-Field\-Size}}}
+\label{mainwindow_8cpp_9c2b7044142a72d814ecff31f02fab48}
+
+
+\hypertarget{mainwindow_8cpp_f3706bd1004df2f034b2d4248aa005c1}{
+\index{mainwindow.cpp@{mainwindow.cpp}!comboPort@{comboPort}}
+\index{comboPort@{comboPort}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[comboPort]{\setlength{\rightskip}{0pt plus 5cm}QCombo\-Box$\ast$ \hyperlink{mainwindow_8cpp_f3706bd1004df2f034b2d4248aa005c1}{combo\-Port}}}
+\label{mainwindow_8cpp_f3706bd1004df2f034b2d4248aa005c1}
+
+
+\hypertarget{mainwindow_8cpp_85b548c0a2f5b990fd45b1846f702bed}{
+\index{mainwindow.cpp@{mainwindow.cpp}!fieldport@{fieldport}}
+\index{fieldport@{fieldport}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[fieldport]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ \hyperlink{mainwindow_8cpp_85b548c0a2f5b990fd45b1846f702bed}{fieldport} = \char`\"{}y\char`\"{}}}
+\label{mainwindow_8cpp_85b548c0a2f5b990fd45b1846f702bed}
+
+
+\hypertarget{mainwindow_8cpp_2e153d156330e018184991dd02e75009}{
+\index{mainwindow.cpp@{mainwindow.cpp}!g@{g}}
+\index{g@{g}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[g]{\setlength{\rightskip}{0pt plus 5cm}int \hyperlink{mainwindow_8cpp_2e153d156330e018184991dd02e75009}{g}\mbox{[}NUMBEROFROBOTS\mbox{]}}}
+\label{mainwindow_8cpp_2e153d156330e018184991dd02e75009}
+
+
+\hypertarget{mainwindow_8cpp_b6a9976891cb20971afedcb268e596a0}{
+\index{mainwindow.cpp@{mainwindow.cpp}!goButton@{goButton}}
+\index{goButton@{goButton}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[goButton]{\setlength{\rightskip}{0pt plus 5cm}QPush\-Button$\ast$ \hyperlink{mainwindow_8cpp_b6a9976891cb20971afedcb268e596a0}{go\-Button}}}
+\label{mainwindow_8cpp_b6a9976891cb20971afedcb268e596a0}
+
+
+\hypertarget{mainwindow_8cpp_5b3043aacdbae62352f5993a33c4a4b7}{
+\index{mainwindow.cpp@{mainwindow.cpp}!imageLabel@{imageLabel}}
+\index{imageLabel@{imageLabel}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[imageLabel]{\setlength{\rightskip}{0pt plus 5cm}QLabel$\ast$ \hyperlink{mainwindow_8cpp_5b3043aacdbae62352f5993a33c4a4b7}{image\-Label}}}
+\label{mainwindow_8cpp_5b3043aacdbae62352f5993a33c4a4b7}
+
+
+\hypertarget{mainwindow_8cpp_3fbb8173a9510be37c564f103a543aaa}{
+\index{mainwindow.cpp@{mainwindow.cpp}!info1@{info1}}
+\index{info1@{info1}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[info1]{\setlength{\rightskip}{0pt plus 5cm}QText\-Edit$\ast$ \hyperlink{mainwindow_8cpp_3fbb8173a9510be37c564f103a543aaa}{info1}}}
+\label{mainwindow_8cpp_3fbb8173a9510be37c564f103a543aaa}
+
+
+\hypertarget{mainwindow_8cpp_850f93f80a2433d5fadf30d5e5e866f4}{
+\index{mainwindow.cpp@{mainwindow.cpp}!info2@{info2}}
+\index{info2@{info2}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[info2]{\setlength{\rightskip}{0pt plus 5cm}QText\-Edit$\ast$ \hyperlink{mainwindow_8cpp_850f93f80a2433d5fadf30d5e5e866f4}{info2}}}
+\label{mainwindow_8cpp_850f93f80a2433d5fadf30d5e5e866f4}
+
+
+\hypertarget{mainwindow_8cpp_0b2e8c7f76df48129f994ecc46d5c66c}{
+\index{mainwindow.cpp@{mainwindow.cpp}!message@{message}}
+\index{message@{message}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[message]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ \hyperlink{mainwindow_8cpp_0b2e8c7f76df48129f994ecc46d5c66c}{message}}}
+\label{mainwindow_8cpp_0b2e8c7f76df48129f994ecc46d5c66c}
+
+
+\hypertarget{mainwindow_8cpp_84351fcfbbed5a81cce783cb68e2eaf6}{
+\index{mainwindow.cpp@{mainwindow.cpp}!openPortButton@{openPortButton}}
+\index{openPortButton@{openPortButton}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[openPortButton]{\setlength{\rightskip}{0pt plus 5cm}QPush\-Button$\ast$ \hyperlink{mainwindow_8cpp_84351fcfbbed5a81cce783cb68e2eaf6}{open\-Port\-Button}}}
+\label{mainwindow_8cpp_84351fcfbbed5a81cce783cb68e2eaf6}
+
+
+\hypertarget{mainwindow_8cpp_00eeca5cdf915ad3d1fd8dbf28ab156d}{
+\index{mainwindow.cpp@{mainwindow.cpp}!portacom@{portacom}}
+\index{portacom@{portacom}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[portacom]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ \hyperlink{mainwindow_8cpp_00eeca5cdf915ad3d1fd8dbf28ab156d}{portacom}}}
+\label{mainwindow_8cpp_00eeca5cdf915ad3d1fd8dbf28ab156d}
+
+
+\hypertarget{mainwindow_8cpp_6b10b2ae96c856016dc4e92021ea50af}{
+\index{mainwindow.cpp@{mainwindow.cpp}!portHandle@{portHandle}}
+\index{portHandle@{portHandle}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[portHandle]{\setlength{\rightskip}{0pt plus 5cm}HANDLE \hyperlink{mainwindow_8cpp_6b10b2ae96c856016dc4e92021ea50af}{port\-Handle}}}
+\label{mainwindow_8cpp_6b10b2ae96c856016dc4e92021ea50af}
+
+
+\hypertarget{mainwindow_8cpp_348a8673070b1d1e2f91feb1149cb76b}{
+\index{mainwindow.cpp@{mainwindow.cpp}!pos_x@{pos\_\-x}}
+\index{pos_x@{pos\_\-x}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[pos\_\-x]{\setlength{\rightskip}{0pt plus 5cm}int \hyperlink{mainwindow_8cpp_348a8673070b1d1e2f91feb1149cb76b}{pos\_\-x}\mbox{[}NUMBEROFROBOTS\mbox{]}}}
+\label{mainwindow_8cpp_348a8673070b1d1e2f91feb1149cb76b}
+
+
+\hypertarget{mainwindow_8cpp_f803113f8db598bbb5cc7cb55c53fd72}{
+\index{mainwindow.cpp@{mainwindow.cpp}!pos_y@{pos\_\-y}}
+\index{pos_y@{pos\_\-y}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[pos\_\-y]{\setlength{\rightskip}{0pt plus 5cm}int \hyperlink{mainwindow_8cpp_f803113f8db598bbb5cc7cb55c53fd72}{pos\_\-y}\mbox{[}NUMBEROFROBOTS\mbox{]}}}
+\label{mainwindow_8cpp_f803113f8db598bbb5cc7cb55c53fd72}
+
+
+\hypertarget{mainwindow_8cpp_a194f1a2c336647d7165309ff921f576}{
+\index{mainwindow.cpp@{mainwindow.cpp}!r@{r}}
+\index{r@{r}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[r]{\setlength{\rightskip}{0pt plus 5cm}int \hyperlink{mainwindow_8cpp_a194f1a2c336647d7165309ff921f576}{r}\mbox{[}NUMBEROFROBOTS\mbox{]}}}
+\label{mainwindow_8cpp_a194f1a2c336647d7165309ff921f576}
+
+
+\hypertarget{mainwindow_8cpp_65bf9d32222c82b489f99fcb4f892edd}{
+\index{mainwindow.cpp@{mainwindow.cpp}!recvbuffer@{recvbuffer}}
+\index{recvbuffer@{recvbuffer}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[recvbuffer]{\setlength{\rightskip}{0pt plus 5cm}char \hyperlink{mainwindow_8cpp_65bf9d32222c82b489f99fcb4f892edd}{recvbuffer}\mbox{[}RECVBUFFERSIZE\mbox{]}}}
+\label{mainwindow_8cpp_65bf9d32222c82b489f99fcb4f892edd}
+
+
+\hypertarget{mainwindow_8cpp_ebf8093f61c93230d92191726d5bc846}{
+\index{mainwindow.cpp@{mainwindow.cpp}!robot@{robot}}
+\index{robot@{robot}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[robot]{\setlength{\rightskip}{0pt plus 5cm}int \hyperlink{mainwindow_8cpp_ebf8093f61c93230d92191726d5bc846}{robot}}}
+\label{mainwindow_8cpp_ebf8093f61c93230d92191726d5bc846}
+
+
+\hypertarget{mainwindow_8cpp_e31aae5c36d2da2116798bb42bf14d73}{
+\index{mainwindow.cpp@{mainwindow.cpp}!robotchanged@{robotchanged}}
+\index{robotchanged@{robotchanged}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[robotchanged]{\setlength{\rightskip}{0pt plus 5cm}bool \hyperlink{mainwindow_8cpp_e31aae5c36d2da2116798bb42bf14d73}{robotchanged}}}
+\label{mainwindow_8cpp_e31aae5c36d2da2116798bb42bf14d73}
+
+
+\hypertarget{mainwindow_8cpp_852e2307ac8c879169cd0f76ed135c1b}{
+\index{mainwindow.cpp@{mainwindow.cpp}!setPosButton@{setPosButton}}
+\index{setPosButton@{setPosButton}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[setPosButton]{\setlength{\rightskip}{0pt plus 5cm}QPush\-Button$\ast$ \hyperlink{mainwindow_8cpp_852e2307ac8c879169cd0f76ed135c1b}{set\-Pos\-Button}}}
+\label{mainwindow_8cpp_852e2307ac8c879169cd0f76ed135c1b}
+
+
+\hypertarget{mainwindow_8cpp_a68dc4dea54cd443bda2a53f9b0621cd}{
+\index{mainwindow.cpp@{mainwindow.cpp}!startButton@{startButton}}
+\index{startButton@{startButton}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[startButton]{\setlength{\rightskip}{0pt plus 5cm}QPush\-Button$\ast$ \hyperlink{mainwindow_8cpp_a68dc4dea54cd443bda2a53f9b0621cd}{start\-Button}}}
+\label{mainwindow_8cpp_a68dc4dea54cd443bda2a53f9b0621cd}
+
+
+\hypertarget{mainwindow_8cpp_12a122b59e7d02ed91703cb0568faa3c}{
+\index{mainwindow.cpp@{mainwindow.cpp}!stopButton@{stopButton}}
+\index{stopButton@{stopButton}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[stopButton]{\setlength{\rightskip}{0pt plus 5cm}QPush\-Button$\ast$ \hyperlink{mainwindow_8cpp_12a122b59e7d02ed91703cb0568faa3c}{stop\-Button}}}
+\label{mainwindow_8cpp_12a122b59e7d02ed91703cb0568faa3c}
+
+
+\hypertarget{mainwindow_8cpp_288b834f8b483958be715bc77558bf46}{
+\index{mainwindow.cpp@{mainwindow.cpp}!str@{str}}
+\index{str@{str}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[str]{\setlength{\rightskip}{0pt plus 5cm}QString \hyperlink{mainwindow_8cpp_288b834f8b483958be715bc77558bf46}{str}}}
+\label{mainwindow_8cpp_288b834f8b483958be715bc77558bf46}
+
+

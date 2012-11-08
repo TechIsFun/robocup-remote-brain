@@ -1,0 +1,457 @@
+\hypertarget{classMainWindow}{
+\section{Riferimenti per la classe Main\-Window}
+\label{classMainWindow}\index{MainWindow@{MainWindow}}
+}
+{\tt \#include $<$mainwindow.h$>$}
+
+\subsection*{Slot pubblici}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classMainWindow_2f955c2c4215bb50acc5d76e5fb99402}{aggiorna} ()
+\item 
+void \hyperlink{classMainWindow_9155ed247a9ce2d4084737e12be86e7b}{append\-PCInfo} (const char $\ast$info, int i)
+\item 
+void \hyperlink{classMainWindow_6c1312a8d376cb19366cce1e084ce01b}{append\-PCInfo} (const char $\ast$info, const char $\ast$i)
+\item 
+void \hyperlink{classMainWindow_1fa8f6b4ad5becd6b6adb85c18f3a238}{append\-PCInfo} (int i)
+\item 
+void \hyperlink{classMainWindow_00ae5979048fe2b58d6d7f3c526d9f85}{append\-PCInfo} (QString info)
+\item 
+void \hyperlink{classMainWindow_64f8e53725a778a11501dadf09b8c042}{append\-PCInfo} (char $\ast$info)
+\item 
+void \hyperlink{classMainWindow_8f842edf62781c42283434f16760a307}{append\-Robot\-Info} (const char $\ast$info, int i)
+\item 
+void \hyperlink{classMainWindow_74763de0eb539f0af358d83a82588fbb}{append\-Robot\-Info} (const char $\ast$info, const char $\ast$i)
+\item 
+void \hyperlink{classMainWindow_940ed66f4b3c536f9eee7975099ab015}{append\-Robot\-Info} (int i)
+\item 
+void \hyperlink{classMainWindow_2f18074a740a58891fd5b989dd71cf3f}{append\-Robot\-Info} (QString info)
+\item 
+void \hyperlink{classMainWindow_a9b4df136ec15062f2eea2c3673c4b57}{append\-Robot\-Info} (const char $\ast$info)
+\end{CompactItemize}
+\subsection*{Signal}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classMainWindow_149ee428e4d3b41686c3a5e1879b30a2}{da\-Aggiornare} ()
+\end{CompactItemize}
+\subsection*{Membri pubblici}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classMainWindow_772ba2e39bd737fa1fb38507c55b6acb}{draw\-Position} ()
+\item 
+int \hyperlink{classMainWindow_ff0645ac68ad121ee2d70f8f989dca42}{getx} (int \hyperlink{mainwindow_8cpp_ebf8093f61c93230d92191726d5bc846}{robot})
+\item 
+int \hyperlink{classMainWindow_031e0654d92e39b23d56749657a05d05}{gety} (int \hyperlink{mainwindow_8cpp_ebf8093f61c93230d92191726d5bc846}{robot})
+\item 
+\hyperlink{classMainWindow_eb676574b78bda84d687fdcfd65d84a6}{Main\-Window} ()
+\item 
+void \hyperlink{classMainWindow_06a4601d7b3cecfb4432f48e067ac81d}{setx} (int \hyperlink{mainwindow_8cpp_ebf8093f61c93230d92191726d5bc846}{robot}, int newx)
+\item 
+void \hyperlink{classMainWindow_5ee21538a4cacfcb64a9b504729f2026}{sety} (int \hyperlink{mainwindow_8cpp_ebf8093f61c93230d92191726d5bc846}{robot}, int newy)
+\end{CompactItemize}
+\subsection*{Campi}
+\begin{CompactItemize}
+\item 
+\hyperlink{classSerialPort}{Serial\-Port} $\ast$ \hyperlink{classMainWindow_730a1b78e42ee50b10b26f34e4bf8b1e}{serialp}
+\end{CompactItemize}
+\subsection*{Membri protetti}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classMainWindow_59701ebb47f7e2f55977543b6293ba47}{context\-Menu\-Event} (QContext\-Menu\-Event $\ast$event)
+\end{CompactItemize}
+\subsection*{Slot privati}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classMainWindow_501f096e32ac1de50b0e913803bdd4e8}{close\-Com\-Port} ()
+\item 
+void \hyperlink{classMainWindow_b20c1e3dbb16cd45ef4f697ce0fb11f7}{goal} ()
+\item 
+void \hyperlink{classMainWindow_d2272e344e46519f026cd02f419884f1}{mouse\-Press\-Event} (QMouse\-Event $\ast$event)
+\item 
+void \hyperlink{classMainWindow_faf58be398c427554d4bef465eff4be0}{open\-Com\-Port} ()
+\item 
+void \hyperlink{classMainWindow_7fea2f4466d9b971fbe4142743a8e3cb}{port\-Sel} ()
+\item 
+void \hyperlink{classMainWindow_50c5e9556f3dfc6de8e0b064d10aa21f}{robot\-Sel} ()
+\item 
+void \hyperlink{classMainWindow_0cb6bab0d23b55595337ae6f9e8eba32}{send\-Cmd} ()
+\item 
+void \hyperlink{classMainWindow_d6073419da050a8657f4adf01acfd2d0}{set\-Pos} ()
+\item 
+void \hyperlink{classMainWindow_60de64d75454385b23995437f1d72669}{start} ()
+\item 
+void \hyperlink{classMainWindow_8c528baf37154d347366083f0f816846}{stop} ()
+\end{CompactItemize}
+\subsection*{Membri privati}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classMainWindow_5176c9496a29e21eacb0f81ca1a29923}{create\-Actions} ()
+\item 
+void \hyperlink{classMainWindow_5c788b6fcb676c3e1cef7e01eed9a420}{create\-Menus} ()
+\end{CompactItemize}
+\subsection*{Attributi privati}
+\begin{CompactItemize}
+\item 
+QAction\-Group $\ast$ \hyperlink{classMainWindow_76d93e5045032189c41520235a2196b9}{alignment\-Group}
+\item 
+QAction $\ast$ \hyperlink{classMainWindow_d618b0cff61434478d762e93add5189e}{exit\-Act}
+\item 
+QMenu $\ast$ \hyperlink{classMainWindow_db1ab65d1aecac73e58f48557c143b2e}{file\-Menu}
+\item 
+QLabel $\ast$ \hyperlink{classMainWindow_1778899fb8e16670083da66e055500d0}{info\-Label}
+\item 
+QPush\-Button $\ast$ \hyperlink{classMainWindow_07ba2d7080a0f0cf1ab683bfe6b80156}{refresh}
+\item 
+QAction $\ast$ \hyperlink{classMainWindow_168587cb4c00ec6773174b004268191d}{reload\-Act}
+\end{CompactItemize}
+
+
+\subsection{Documentazione dei costruttori e dei distruttori}
+\hypertarget{classMainWindow_eb676574b78bda84d687fdcfd65d84a6}{
+\index{MainWindow@{Main\-Window}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{Main\-Window}}
+\subsubsection[MainWindow]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classMainWindow}{Main\-Window} ()}}
+\label{classMainWindow_eb676574b78bda84d687fdcfd65d84a6}
+
+
+Main window constructor. 
+
+\subsection{Documentazione delle funzioni membro}
+\hypertarget{classMainWindow_2f955c2c4215bb50acc5d76e5fb99402}{
+\index{MainWindow@{Main\-Window}!aggiorna@{aggiorna}}
+\index{aggiorna@{aggiorna}!MainWindow@{Main\-Window}}
+\subsubsection[aggiorna]{\setlength{\rightskip}{0pt plus 5cm}void aggiorna ()\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classMainWindow_2f955c2c4215bb50acc5d76e5fb99402}
+
+
+\hypertarget{classMainWindow_9155ed247a9ce2d4084737e12be86e7b}{
+\index{MainWindow@{Main\-Window}!appendPCInfo@{appendPCInfo}}
+\index{appendPCInfo@{appendPCInfo}!MainWindow@{Main\-Window}}
+\subsubsection[appendPCInfo]{\setlength{\rightskip}{0pt plus 5cm}void append\-PCInfo (const char $\ast$ {\em info}, int {\em i})\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classMainWindow_9155ed247a9ce2d4084737e12be86e7b}
+
+
+Write a string and an int in PC Info widget. \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em info}]The string you have to write. \item[{\em i}]The int you have to write. \end{description}
+\end{Desc}
+\hypertarget{classMainWindow_6c1312a8d376cb19366cce1e084ce01b}{
+\index{MainWindow@{Main\-Window}!appendPCInfo@{appendPCInfo}}
+\index{appendPCInfo@{appendPCInfo}!MainWindow@{Main\-Window}}
+\subsubsection[appendPCInfo]{\setlength{\rightskip}{0pt plus 5cm}void append\-PCInfo (const char $\ast$ {\em info}, const char $\ast$ {\em i})\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classMainWindow_6c1312a8d376cb19366cce1e084ce01b}
+
+
+Write two strings in PC Info widget. \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em info}]The first string you have to write. \item[{\em i}]The second string you have to write. \end{description}
+\end{Desc}
+\hypertarget{classMainWindow_1fa8f6b4ad5becd6b6adb85c18f3a238}{
+\index{MainWindow@{Main\-Window}!appendPCInfo@{appendPCInfo}}
+\index{appendPCInfo@{appendPCInfo}!MainWindow@{Main\-Window}}
+\subsubsection[appendPCInfo]{\setlength{\rightskip}{0pt plus 5cm}void append\-PCInfo (int {\em i})\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classMainWindow_1fa8f6b4ad5becd6b6adb85c18f3a238}
+
+
+Write an int in PC Info widget. \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em i}]The int you have to write. \end{description}
+\end{Desc}
+\hypertarget{classMainWindow_00ae5979048fe2b58d6d7f3c526d9f85}{
+\index{MainWindow@{Main\-Window}!appendPCInfo@{appendPCInfo}}
+\index{appendPCInfo@{appendPCInfo}!MainWindow@{Main\-Window}}
+\subsubsection[appendPCInfo]{\setlength{\rightskip}{0pt plus 5cm}void append\-PCInfo (QString {\em info})\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classMainWindow_00ae5979048fe2b58d6d7f3c526d9f85}
+
+
+Write a QString in PC Info widget. \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em info}]The string you have to write. \end{description}
+\end{Desc}
+\hypertarget{classMainWindow_64f8e53725a778a11501dadf09b8c042}{
+\index{MainWindow@{Main\-Window}!appendPCInfo@{appendPCInfo}}
+\index{appendPCInfo@{appendPCInfo}!MainWindow@{Main\-Window}}
+\subsubsection[appendPCInfo]{\setlength{\rightskip}{0pt plus 5cm}void append\-PCInfo (char $\ast$ {\em info})\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classMainWindow_64f8e53725a778a11501dadf09b8c042}
+
+
+Write a string in PC Info widget. \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em info}]The string you have to write. \end{description}
+\end{Desc}
+\hypertarget{classMainWindow_8f842edf62781c42283434f16760a307}{
+\index{MainWindow@{Main\-Window}!appendRobotInfo@{appendRobotInfo}}
+\index{appendRobotInfo@{appendRobotInfo}!MainWindow@{Main\-Window}}
+\subsubsection[appendRobotInfo]{\setlength{\rightskip}{0pt plus 5cm}void append\-Robot\-Info (const char $\ast$ {\em info}, int {\em i})\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classMainWindow_8f842edf62781c42283434f16760a307}
+
+
+Write a string and an int in Robot Info widget. \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em info}]The string you have to write. \item[{\em i}]The int you have to write. \end{description}
+\end{Desc}
+\hypertarget{classMainWindow_74763de0eb539f0af358d83a82588fbb}{
+\index{MainWindow@{Main\-Window}!appendRobotInfo@{appendRobotInfo}}
+\index{appendRobotInfo@{appendRobotInfo}!MainWindow@{Main\-Window}}
+\subsubsection[appendRobotInfo]{\setlength{\rightskip}{0pt plus 5cm}void append\-Robot\-Info (const char $\ast$ {\em info}, const char $\ast$ {\em i})\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classMainWindow_74763de0eb539f0af358d83a82588fbb}
+
+
+Write two strings in Robot Info widget. \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em info}]The first string you have to write. \item[{\em i}]The second string you have to write. \end{description}
+\end{Desc}
+\hypertarget{classMainWindow_940ed66f4b3c536f9eee7975099ab015}{
+\index{MainWindow@{Main\-Window}!appendRobotInfo@{appendRobotInfo}}
+\index{appendRobotInfo@{appendRobotInfo}!MainWindow@{Main\-Window}}
+\subsubsection[appendRobotInfo]{\setlength{\rightskip}{0pt plus 5cm}void append\-Robot\-Info (int {\em i})\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classMainWindow_940ed66f4b3c536f9eee7975099ab015}
+
+
+Write an int in Robot Info widget. \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em i}]The int you have to write. \end{description}
+\end{Desc}
+\hypertarget{classMainWindow_2f18074a740a58891fd5b989dd71cf3f}{
+\index{MainWindow@{Main\-Window}!appendRobotInfo@{appendRobotInfo}}
+\index{appendRobotInfo@{appendRobotInfo}!MainWindow@{Main\-Window}}
+\subsubsection[appendRobotInfo]{\setlength{\rightskip}{0pt plus 5cm}void append\-Robot\-Info (QString {\em info})\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classMainWindow_2f18074a740a58891fd5b989dd71cf3f}
+
+
+Write a QString in Robot Info widget. \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em info}]The string you have to write. \end{description}
+\end{Desc}
+\hypertarget{classMainWindow_a9b4df136ec15062f2eea2c3673c4b57}{
+\index{MainWindow@{Main\-Window}!appendRobotInfo@{appendRobotInfo}}
+\index{appendRobotInfo@{appendRobotInfo}!MainWindow@{Main\-Window}}
+\subsubsection[appendRobotInfo]{\setlength{\rightskip}{0pt plus 5cm}void append\-Robot\-Info (const char $\ast$ {\em info})\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classMainWindow_a9b4df136ec15062f2eea2c3673c4b57}
+
+
+Write a string in Robot Info widget. \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em info}]The string you have to write. \end{description}
+\end{Desc}
+\hypertarget{classMainWindow_501f096e32ac1de50b0e913803bdd4e8}{
+\index{MainWindow@{Main\-Window}!closeComPort@{closeComPort}}
+\index{closeComPort@{closeComPort}!MainWindow@{Main\-Window}}
+\subsubsection[closeComPort]{\setlength{\rightskip}{0pt plus 5cm}void close\-Com\-Port ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{classMainWindow_501f096e32ac1de50b0e913803bdd4e8}
+
+
+Method associated with Close Com\-Port button Close the handle of the open port and terminate the thread \hypertarget{classMainWindow_59701ebb47f7e2f55977543b6293ba47}{
+\index{MainWindow@{Main\-Window}!contextMenuEvent@{contextMenuEvent}}
+\index{contextMenuEvent@{contextMenuEvent}!MainWindow@{Main\-Window}}
+\subsubsection[contextMenuEvent]{\setlength{\rightskip}{0pt plus 5cm}void context\-Menu\-Event (QContext\-Menu\-Event $\ast$ {\em event})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classMainWindow_59701ebb47f7e2f55977543b6293ba47}
+
+
+Event associated with context menu \hypertarget{classMainWindow_5176c9496a29e21eacb0f81ca1a29923}{
+\index{MainWindow@{Main\-Window}!createActions@{createActions}}
+\index{createActions@{createActions}!MainWindow@{Main\-Window}}
+\subsubsection[createActions]{\setlength{\rightskip}{0pt plus 5cm}void create\-Actions ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classMainWindow_5176c9496a29e21eacb0f81ca1a29923}
+
+
+Create menu actions \hypertarget{classMainWindow_5c788b6fcb676c3e1cef7e01eed9a420}{
+\index{MainWindow@{Main\-Window}!createMenus@{createMenus}}
+\index{createMenus@{createMenus}!MainWindow@{Main\-Window}}
+\subsubsection[createMenus]{\setlength{\rightskip}{0pt plus 5cm}void create\-Menus ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classMainWindow_5c788b6fcb676c3e1cef7e01eed9a420}
+
+
+Create menus \hypertarget{classMainWindow_149ee428e4d3b41686c3a5e1879b30a2}{
+\index{MainWindow@{Main\-Window}!daAggiornare@{daAggiornare}}
+\index{daAggiornare@{daAggiornare}!MainWindow@{Main\-Window}}
+\subsubsection[daAggiornare]{\setlength{\rightskip}{0pt plus 5cm}void da\-Aggiornare ()\hspace{0.3cm}{\tt  \mbox{[}signal\mbox{]}}}}
+\label{classMainWindow_149ee428e4d3b41686c3a5e1879b30a2}
+
+
+\hypertarget{classMainWindow_772ba2e39bd737fa1fb38507c55b6acb}{
+\index{MainWindow@{Main\-Window}!drawPosition@{drawPosition}}
+\index{drawPosition@{drawPosition}!MainWindow@{Main\-Window}}
+\subsubsection[drawPosition]{\setlength{\rightskip}{0pt plus 5cm}void draw\-Position ()}}
+\label{classMainWindow_772ba2e39bd737fa1fb38507c55b6acb}
+
+
+Draw a cross on the field image. Each cross indicates a Robot's position. \hypertarget{classMainWindow_ff0645ac68ad121ee2d70f8f989dca42}{
+\index{MainWindow@{Main\-Window}!getx@{getx}}
+\index{getx@{getx}!MainWindow@{Main\-Window}}
+\subsubsection[getx]{\setlength{\rightskip}{0pt plus 5cm}int getx (int {\em robot})}}
+\label{classMainWindow_ff0645ac68ad121ee2d70f8f989dca42}
+
+
+Get the x coordinate of a Robot. \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em robot}]The Robot's number. \end{description}
+\end{Desc}
+\hypertarget{classMainWindow_031e0654d92e39b23d56749657a05d05}{
+\index{MainWindow@{Main\-Window}!gety@{gety}}
+\index{gety@{gety}!MainWindow@{Main\-Window}}
+\subsubsection[gety]{\setlength{\rightskip}{0pt plus 5cm}int gety (int {\em robot})}}
+\label{classMainWindow_031e0654d92e39b23d56749657a05d05}
+
+
+Get the y coordinate of a Robot. \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em robot}]The Robot's number. \end{description}
+\end{Desc}
+\hypertarget{classMainWindow_b20c1e3dbb16cd45ef4f697ce0fb11f7}{
+\index{MainWindow@{Main\-Window}!goal@{goal}}
+\index{goal@{goal}!MainWindow@{Main\-Window}}
+\subsubsection[goal]{\setlength{\rightskip}{0pt plus 5cm}void goal ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{classMainWindow_b20c1e3dbb16cd45ef4f697ce0fb11f7}
+
+
+Method associated with Goal button. Sends the following command: Ri\-GOAL=y or Ri\-GOAL=b where i is the robot's number y is the yellow goal b is the blue goal \hypertarget{classMainWindow_d2272e344e46519f026cd02f419884f1}{
+\index{MainWindow@{Main\-Window}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!MainWindow@{Main\-Window}}
+\subsubsection[mousePressEvent]{\setlength{\rightskip}{0pt plus 5cm}void mouse\-Press\-Event (QMouse\-Event $\ast$ {\em event})\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{classMainWindow_d2272e344e46519f026cd02f419884f1}
+
+
+Capture a mouse event in the main window \hypertarget{classMainWindow_faf58be398c427554d4bef465eff4be0}{
+\index{MainWindow@{Main\-Window}!openComPort@{openComPort}}
+\index{openComPort@{openComPort}!MainWindow@{Main\-Window}}
+\subsubsection[openComPort]{\setlength{\rightskip}{0pt plus 5cm}void open\-Com\-Port ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{classMainWindow_faf58be398c427554d4bef465eff4be0}
+
+
+Method associated with the Open\-Port button. Open a connection on the selected COM port. If the connection is created successfully, a thread is started waiting for incoming strings. \hypertarget{classMainWindow_7fea2f4466d9b971fbe4142743a8e3cb}{
+\index{MainWindow@{Main\-Window}!portSel@{portSel}}
+\index{portSel@{portSel}!MainWindow@{Main\-Window}}
+\subsubsection[portSel]{\setlength{\rightskip}{0pt plus 5cm}void port\-Sel ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{classMainWindow_7fea2f4466d9b971fbe4142743a8e3cb}
+
+
+Method associated with COM port selection combo \hypertarget{classMainWindow_50c5e9556f3dfc6de8e0b064d10aa21f}{
+\index{MainWindow@{Main\-Window}!robotSel@{robotSel}}
+\index{robotSel@{robotSel}!MainWindow@{Main\-Window}}
+\subsubsection[robotSel]{\setlength{\rightskip}{0pt plus 5cm}void robot\-Sel ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{classMainWindow_50c5e9556f3dfc6de8e0b064d10aa21f}
+
+
+Method associated with robot selection combo \hypertarget{classMainWindow_0cb6bab0d23b55595337ae6f9e8eba32}{
+\index{MainWindow@{Main\-Window}!sendCmd@{sendCmd}}
+\index{sendCmd@{sendCmd}!MainWindow@{Main\-Window}}
+\subsubsection[sendCmd]{\setlength{\rightskip}{0pt plus 5cm}void send\-Cmd ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{classMainWindow_0cb6bab0d23b55595337ae6f9e8eba32}
+
+
+Method associated with Send Command button. Sends the string specified in the associated text box. \hypertarget{classMainWindow_d6073419da050a8657f4adf01acfd2d0}{
+\index{MainWindow@{Main\-Window}!setPos@{setPos}}
+\index{setPos@{setPos}!MainWindow@{Main\-Window}}
+\subsubsection[setPos]{\setlength{\rightskip}{0pt plus 5cm}void set\-Pos ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{classMainWindow_d6073419da050a8657f4adf01acfd2d0}
+
+
+Method associated with Set Posistion button. Send the following command: Ri\-SETPOS.X=x.Y=y.T=t where i is the robot's number x,y the position t the orientation. \hypertarget{classMainWindow_06a4601d7b3cecfb4432f48e067ac81d}{
+\index{MainWindow@{Main\-Window}!setx@{setx}}
+\index{setx@{setx}!MainWindow@{Main\-Window}}
+\subsubsection[setx]{\setlength{\rightskip}{0pt plus 5cm}void setx (int {\em robot}, int {\em newx})}}
+\label{classMainWindow_06a4601d7b3cecfb4432f48e067ac81d}
+
+
+Set the x coordinate of a Robot. \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em robot}]The Robot's number. \item[{\em newx}]The x coordinate. \end{description}
+\end{Desc}
+\hypertarget{classMainWindow_5ee21538a4cacfcb64a9b504729f2026}{
+\index{MainWindow@{Main\-Window}!sety@{sety}}
+\index{sety@{sety}!MainWindow@{Main\-Window}}
+\subsubsection[sety]{\setlength{\rightskip}{0pt plus 5cm}void sety (int {\em robot}, int {\em newy})}}
+\label{classMainWindow_5ee21538a4cacfcb64a9b504729f2026}
+
+
+Set the y coordinate of a Robot. \begin{Desc}
+\item[Parametri:]
+\begin{description}
+\item[{\em robot}]The Robot's number. \item[{\em newy}]The y coordinate. \end{description}
+\end{Desc}
+\hypertarget{classMainWindow_60de64d75454385b23995437f1d72669}{
+\index{MainWindow@{Main\-Window}!start@{start}}
+\index{start@{start}!MainWindow@{Main\-Window}}
+\subsubsection[start]{\setlength{\rightskip}{0pt plus 5cm}void start ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{classMainWindow_60de64d75454385b23995437f1d72669}
+
+
+Method associated with Start button. Sends the following command: Ri\-START where i is the robot's number. \hypertarget{classMainWindow_8c528baf37154d347366083f0f816846}{
+\index{MainWindow@{Main\-Window}!stop@{stop}}
+\index{stop@{stop}!MainWindow@{Main\-Window}}
+\subsubsection[stop]{\setlength{\rightskip}{0pt plus 5cm}void stop ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{classMainWindow_8c528baf37154d347366083f0f816846}
+
+
+Method associated with Stop button. Sends the following command: Ri\-STOP where i is the robot's number. 
+
+\subsection{Documentazione dei campi}
+\hypertarget{classMainWindow_76d93e5045032189c41520235a2196b9}{
+\index{MainWindow@{Main\-Window}!alignmentGroup@{alignmentGroup}}
+\index{alignmentGroup@{alignmentGroup}!MainWindow@{Main\-Window}}
+\subsubsection[alignmentGroup]{\setlength{\rightskip}{0pt plus 5cm}QAction\-Group$\ast$ \hyperlink{classMainWindow_76d93e5045032189c41520235a2196b9}{alignment\-Group}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classMainWindow_76d93e5045032189c41520235a2196b9}
+
+
+\hypertarget{classMainWindow_d618b0cff61434478d762e93add5189e}{
+\index{MainWindow@{Main\-Window}!exitAct@{exitAct}}
+\index{exitAct@{exitAct}!MainWindow@{Main\-Window}}
+\subsubsection[exitAct]{\setlength{\rightskip}{0pt plus 5cm}QAction$\ast$ \hyperlink{classMainWindow_d618b0cff61434478d762e93add5189e}{exit\-Act}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classMainWindow_d618b0cff61434478d762e93add5189e}
+
+
+\hypertarget{classMainWindow_db1ab65d1aecac73e58f48557c143b2e}{
+\index{MainWindow@{Main\-Window}!fileMenu@{fileMenu}}
+\index{fileMenu@{fileMenu}!MainWindow@{Main\-Window}}
+\subsubsection[fileMenu]{\setlength{\rightskip}{0pt plus 5cm}QMenu$\ast$ \hyperlink{classMainWindow_db1ab65d1aecac73e58f48557c143b2e}{file\-Menu}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classMainWindow_db1ab65d1aecac73e58f48557c143b2e}
+
+
+\hypertarget{classMainWindow_1778899fb8e16670083da66e055500d0}{
+\index{MainWindow@{Main\-Window}!infoLabel@{infoLabel}}
+\index{infoLabel@{infoLabel}!MainWindow@{Main\-Window}}
+\subsubsection[infoLabel]{\setlength{\rightskip}{0pt plus 5cm}QLabel$\ast$ \hyperlink{classMainWindow_1778899fb8e16670083da66e055500d0}{info\-Label}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classMainWindow_1778899fb8e16670083da66e055500d0}
+
+
+\hypertarget{classMainWindow_07ba2d7080a0f0cf1ab683bfe6b80156}{
+\index{MainWindow@{Main\-Window}!refresh@{refresh}}
+\index{refresh@{refresh}!MainWindow@{Main\-Window}}
+\subsubsection[refresh]{\setlength{\rightskip}{0pt plus 5cm}QPush\-Button$\ast$ \hyperlink{classMainWindow_07ba2d7080a0f0cf1ab683bfe6b80156}{refresh}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classMainWindow_07ba2d7080a0f0cf1ab683bfe6b80156}
+
+
+\hypertarget{classMainWindow_168587cb4c00ec6773174b004268191d}{
+\index{MainWindow@{Main\-Window}!reloadAct@{reloadAct}}
+\index{reloadAct@{reloadAct}!MainWindow@{Main\-Window}}
+\subsubsection[reloadAct]{\setlength{\rightskip}{0pt plus 5cm}QAction$\ast$ \hyperlink{classMainWindow_168587cb4c00ec6773174b004268191d}{reload\-Act}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classMainWindow_168587cb4c00ec6773174b004268191d}
+
+
+\hypertarget{classMainWindow_730a1b78e42ee50b10b26f34e4bf8b1e}{
+\index{MainWindow@{Main\-Window}!serialp@{serialp}}
+\index{serialp@{serialp}!MainWindow@{Main\-Window}}
+\subsubsection[serialp]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classSerialPort}{Serial\-Port}$\ast$ \hyperlink{classMainWindow_730a1b78e42ee50b10b26f34e4bf8b1e}{serialp}}}
+\label{classMainWindow_730a1b78e42ee50b10b26f34e4bf8b1e}
+
+
+
+
+La documentazione per questa classe \`{e} stata generata a partire dai seguenti file:\begin{CompactItemize}
+\item 
+\hyperlink{mainwindow_8h}{mainwindow.h}\item 
+\hyperlink{mainwindow_8cpp}{mainwindow.cpp}\end{CompactItemize}
